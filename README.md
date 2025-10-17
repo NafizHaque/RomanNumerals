@@ -8,7 +8,8 @@ Program is a simple console app that ONLY USES the first argument.
 
 The argument parameters are
 
-Integers: 4000 > input > 0 
-String 11 > input > 0
+Integers: 4000 > input > 0
+
+String: 11 > input length > 0
 
 
