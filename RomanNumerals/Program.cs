@@ -39,13 +39,13 @@ namespace RomanNumerals
             if(number > 0 && number < 4000){
                 Console.WriteLine(calculator.IntToRoman(number));
             }
-            else if(number == 0 && input.Length < 12 )
+            else if(number == 0 && input.Length < 12 && input.Length > 0)
             {
                 Console.WriteLine(calculator.RomanToInt(input));
             }
             else
             {
-                Console.WriteLine($"The input: {input}, is invalid! The input can only be a number between 0 to 4000 or a roman numeral string that is less than 12 characters");
+                Console.WriteLine($"The input: {input}, is invalid! The input can only be a number between 0 to 4000 or a roman numeral string that is between 1 to 11 characters");
             }
         }
     }
