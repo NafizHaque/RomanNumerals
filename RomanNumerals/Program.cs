@@ -41,7 +41,7 @@ namespace RomanNumerals
             }
             else if(number == 0 && input.Length < 12 && input.Length > 0)
             {
-                Console.WriteLine(calculator.RomanToInt(input));
+                Console.WriteLine(calculator.RomanToInt(input.ToUpper()));
             }
             else
             {
