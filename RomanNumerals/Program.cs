@@ -6,7 +6,7 @@ namespace RomanNumerals
     {
         public static void Main(string[] args)
         {
-
+            
             if (args.Length < 1)
             {
                 Console.WriteLine("No imput found! This program uses ONLY the first argument.");
@@ -39,9 +39,13 @@ namespace RomanNumerals
             if(number > 0 && number < 4000){
                 Console.WriteLine(calculator.IntToRoman(number));
             }
-            else if(number == 0)
+            else if(number == 0 && input.Length < 12 )
             {
                 Console.WriteLine(calculator.RomanToInt(input));
+            }
+            else
+            {
+                Console.WriteLine($"The input: {input}, is invalid! The input can only be a number between 0 to 4000 or a roman numeral string that is less than 12 characters");
             }
         }
     }
